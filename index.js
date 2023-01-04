@@ -23,11 +23,27 @@
 
 //-----------3---------
 
-function past(h, m, s) {
-  const exactTime = h * 3600000 + m * 60000 + s * 1000;
-  console.log("🚀 ~ exactTime", exactTime);
+// function past(h, m, s) {
+//   const exactTime = h * 3600000 + m * 60000 + s * 1000;
+//   console.log("🚀 ~ exactTime", exactTime);
 
-  // return
+//   // return
+// }
+
+// past(0, 1, 1);
+
+//----------- 4 : revert the data ---------
+
+
+function invert(array) {
+  // return array
+  var arr = [];
+  for (let i = 0; i < array.length; i++) {
+    arr.push(-array[i]);
+  }
+  return arr;
 }
 
-past(0, 1, 1);
+const a = invert([1, -2, 3, -4, 5]);
+
+console.log(a);
