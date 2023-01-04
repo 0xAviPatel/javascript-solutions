@@ -7,14 +7,27 @@
 //   }
 // };
 
-function power(n) {
-  var sub_array = [];
+//-----------2---------
 
-  for (let index = 0; index < n; index++) {
-    sub_array.push(2 ** index);
-  }
+// function power(n) {
+//   var sub_array = [];
 
-  return sub_array;
+//   for (let index = 0; index < n; index++) {
+//     sub_array.push(2 ** index);
+//   }
+
+//   return sub_array;
+// }
+
+// console.log(power(5));
+
+//-----------3---------
+
+function past(h, m, s) {
+  const exactTime = h * 3600000 + m * 60000 + s * 1000;
+  console.log("🚀 ~ exactTime", exactTime);
+
+  // return
 }
 
-console.log(power(5));
+past(0, 1, 1);
