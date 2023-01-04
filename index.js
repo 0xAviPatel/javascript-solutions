@@ -34,16 +34,34 @@
 
 //----------- 4 : revert the data ---------
 
+// function invert(array) {
+//   // return array
+//   var arr = [];
+//   for (let i = 0; i < array.length; i++) {
+//     arr.push(-array[i]);
+//   }
+//   return arr;
+// }
 
-function invert(array) {
-  // return array
-  var arr = [];
-  for (let i = 0; i < array.length; i++) {
-    arr.push(-array[i]);
+// const a = invert([1, -2, 3, -4, 5]);
+
+// console.log(a);
+
+//----------- 5 functions sum ---------
+
+function getSum(a, b) {
+  if (a === b) return 1;
+  else {
+    let arr = [];
+    for (let i = a; i <= b; i++) {
+      arr.push(i);
+    }
+    return arr.reduce((a, b) => a + b);
   }
-  return arr;
 }
 
-const a = invert([1, -2, 3, -4, 5]);
+const a = getSum(-1, 5);
 
-console.log(a);
+console.log(a, "---------->>>>>>>");
+
+//sadly it's giving an error in codewars
